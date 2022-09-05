@@ -1,10 +1,8 @@
-from asktanya.func import how_to, try_ask, get_random_user_agent
-
+from asktanya.func import how_to, try_ask, headers
 from bs4 import BeautifulSoup
 import requests
 
-user_agent = get_random_user_agent()
-headers = {"user-agent": user_agent}
+
 
 
 def ask_tanya(question):
