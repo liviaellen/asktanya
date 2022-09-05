@@ -64,3 +64,6 @@ pypi_test:
 
 pypi:
 	@twine upload dist/* -u $(PYPI_USERNAME)
+
+pypi_update:
+	@twine upload --skip-existing dist/* -u $(PYPI_USERNAME)

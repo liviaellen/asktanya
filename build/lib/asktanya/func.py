@@ -71,12 +71,12 @@ def try_ask(soup, question):
             except:
                 try:
                     answer1 = soup.select_one(".d9FyLd").text
-                    print("cond4")
+                    #print("cond4")
                     return answer1
                 except:
                     try:
                         answer1 = soup.select_one(".hgKElc").text
-                        print("TRY - Q: where is? what is the most __ ?")
+                        #print("TRY - Q: where is? what is the most __ ?")
                         return answer1
                     except:
                         try:
@@ -84,7 +84,7 @@ def try_ask(soup, question):
                                 ".FLP8od"
                             ).text  # "LEsW6e DVGBBd"><div class="wDYxhc NFQFxe oHglmf xzPb7d"
                             answer2 = soup.select_one(".NFQFxe").text
-                            print(
+                            #print(
                                 "TRY - Who is ___, exp: Who is the president of United States?"
                             )
                             if answer2 != "":
@@ -94,12 +94,12 @@ def try_ask(soup, question):
                             try:
                                 # is __ better than ___?
                                 answer1 = soup.select_one(".iKJnec").text
-                                print("cond is __ better than ___? ")
+                                #print("cond is __ better than ___? ")
                                 return answer1
                             except:
                                 try:
                                     answer1 = soup.select_one(".zCubwf").text
-                                    print("TRY - Q: when is? ")
+                                    #print("TRY - Q: when is? ")
                                     return answer1
                                 except:
                                     # answer1=soup.select_one('.LTKOO').text
