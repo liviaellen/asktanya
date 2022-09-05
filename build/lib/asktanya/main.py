@@ -7,7 +7,7 @@ headers = {
 }
 
 
-def ask_google(question):
+def ask_tanya(question):
 
     html = requests.get(f'https://www.google.com/search?q="{question}', headers=headers)
     soup = BeautifulSoup(html.text, "html.parser")
@@ -73,4 +73,4 @@ def ask_google(question):
 
 
 if __name__ == "__main__":
-    print(ask_google(input("Ask Tanya anything! \nType your question here: ")))
+    print(ask_tanya(input("Ask Tanya anything! \nType your question here: ")))

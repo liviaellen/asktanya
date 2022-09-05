@@ -11,9 +11,9 @@
 
 > Ask-tanya anything! Asktanya is a Python framework to search factual information on the internet.
 
-### 🏠 [Homepage](liviaellen.com/asktanya)
+### 🏠 [Homepage](https://github.com/liviaellen/asktanya/)
 
-### ✨ [Demo](liviaellen.com/asktanya)
+### ✨ [Demo-Coming Soon]()
 
 ## Install
 
@@ -21,10 +21,16 @@
 pip install asktanya
 ```
 
-## Usage
-
+## Usage in CLI / Terminal
 ```sh
 ask-tanya
+```
+
+## Usage in Python
+```python
+import asktanya
+from asktanya.main import ask_tanya
+ask_tanya("What is the fastest bike?")
 ```
 
 ## Author
@@ -37,7 +43,7 @@ ask-tanya
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/liviaellen/asktanya/issues). 
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/liviaellen/asktanya/issues).
 
 ## Show your support
 

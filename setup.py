@@ -12,8 +12,8 @@ long_description = (this_directory / "README.md").read_text()
 
 
 setup(name='asktanya',
-      version="1.0.4",
-      description="Ask me anything",
+      version="1.0.5",
+      description="Ask-tanya anything! Asktanya is a Python framework to search factual information on the internet.",
       # other arguments omitted
       long_description=long_description,
       long_description_content_type='text/markdown',

@@ -1,6 +1,6 @@
 #!python
 # -*- coding: utf-8 -*-
 
-from asktanya.main import ask_google
+from asktanya.main import ask_tanya
 
-print(ask_google(input("Ask Tanya anything! \nType your question here: ")))
+print(ask_tanya(input("Ask Tanya anything! \nType your question here: ")))

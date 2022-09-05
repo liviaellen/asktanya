@@ -52,7 +52,9 @@ def wiki_summary(keyword):
 def try_ask(soup, question):
     q = question.lower()
     try:
-        answer1 = soup.select_one(".ILfuVd").text
+        answer1 = soup.select_one("#cwos").text
+
+        #answer1 = soup.select_one(".ILfuVd").text
         # print('Q: why is ___ cond? ')
         return answer1
     except:
@@ -103,25 +105,29 @@ def try_ask(soup, question):
                                     # answer1=soup.select_one('.LTKOO').text
                                     # print('TRY - Q: what is definition of? ')
                                     # return answer1
+                                    try:
+                                        answer1 = soup.select_one("#cwos").text
+                                        print('#math')
+                                        return answer1
+                                    except:
+                                        if (
+                                            q.split()[0] == "what"
+                                            or "meaning" in q
+                                            or "definition" in q
+                                        ):
+                                            # print("TRY - ask wiki now, so it might be shitty")
+                                            # if "what is" in question.lower():
+                                            # answer1 = wiki_summary(question.strip('?').upper().strip('WHAT IS'))
+                                            key = " ".join(clean_text(question))
+                                            # print('key',key)
+                                            # search_list=[x.lower() for x in wikipedia.search(key)]
+                                            # if key.lower() in search_list:
+                                            answer1 = wiki_summary_google(key)
+                                            # print(answer1)
+                                            if answer1 != "":
+                                                return answer1
+                                            answer1 = f"I am sorry I don't know about the answer to the question - {question}. I will keep learning"
 
-                                    if (
-                                        q.split()[0] == "what"
-                                        or "meaning" in q
-                                        or "definition" in q
-                                    ):
-                                        # print("TRY - ask wiki now, so it might be shitty")
-                                        # if "what is" in question.lower():
-                                        # answer1 = wiki_summary(question.strip('?').upper().strip('WHAT IS'))
-                                        key = " ".join(clean_text(question))
-                                        # print('key',key)
-                                        # search_list=[x.lower() for x in wikipedia.search(key)]
-                                        # if key.lower() in search_list:
-                                        answer1 = wiki_summary_google(key)
-                                        # print(answer1)
-                                        if answer1 != "":
-                                            return answer1
-                                        answer1 = f"I am sorry I don't know about the answer to the question - {question}. I will keep learning"
-
-                                    else:
-                                        answer1 = f"I am sorry I don't know about the answer to the question - {question}. I will keep learning"
-    return answer1
+                                        else:
+                                            answer1 = f"I am sorry I don't know about the answer to the question - {question}. I will keep learning"
+        return answer1
