@@ -17,6 +17,8 @@ test:
 ftest:
 	@Write me
 
+run:
+	python -m asktanya.main
 clean:
 	@rm -f */version.txt
 	@rm -f .coverage
@@ -25,10 +27,14 @@ clean:
 	@rm -fr asktanya-*.dist-info
 	@rm -fr asktanya.egg-info
 
-install:
+install2:
 	@pip install . -U
 
-all: clean install test black check_code
+install:
+	@pip install -e .
+all: clean install black check_code
+
+check: black check_code
 
 count_lines:
 	@find ./ -name '*.py' -exec  wc -l {} \; | sort -n| awk \
