@@ -55,7 +55,7 @@ push:
 # ----------------------------------
 #      UPLOAD PACKAGE TO PYPI
 # ----------------------------------
-PYPI_USERNAME=<AUTHOR>
+PYPI_USERNAME=liviaellen
 build:
 	@python setup.py sdist bdist_wheel
 
