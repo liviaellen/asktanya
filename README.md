@@ -9,11 +9,11 @@
   </a>
 </p>
 
-> Ask-tanya anything! Asktanya is a Python framework to search factual information on the internet.
+> Ask-tanya anything! Asktanya is a framework to search factual information on the internet.
 
 ### 🏠 [Homepage](https://github.com/liviaellen/asktanya/)
 
-### ✨ [Demo-Coming Soon]()
+### ✨ [Demo](https://asktanya.herokuapp.com/)
 
 ## Install
 

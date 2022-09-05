@@ -52,10 +52,8 @@ def wiki_summary(keyword):
 def try_ask(soup, question):
     q = question.lower()
     try:
-        answer1 = soup.select_one("#cwos").text
-
-        #answer1 = soup.select_one(".ILfuVd").text
-        # print('Q: why is ___ cond? ')
+        answer1 = soup.select_one(".ILfuVd").text
+        #print('Q: why is ___ cond? ')
         return answer1
     except:
         try:

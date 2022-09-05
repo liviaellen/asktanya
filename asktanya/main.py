@@ -1,10 +1,10 @@
-from asktanya.func import how_to, try_ask
+from asktanya.func import how_to, try_ask, get_random_user_agent
+
 from bs4 import BeautifulSoup
 import requests
 
-headers = {
-    "User-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36"
-}
+user_agent = get_random_user_agent()
+headers = {"user-agent": user_agent}
 
 
 def ask_tanya(question):
