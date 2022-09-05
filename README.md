@@ -1,74 +1,51 @@
-# Data analysis
-- Document here the project: asktanya
-- Description: Project Description
-- Data Source:
-- Type of analysis:
+<h1 align="center">Welcome to asktanya 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.4-blue.svg?cacheSeconds=2592000" />
+  <a href="github.com/liviaellen/asktanya" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="#" target="_blank">
+    <img alt="License: MIT License" src="https://img.shields.io/badge/License-MIT License-yellow.svg" />
+  </a>
+</p>
 
-Please document the project the better you can.
+> Ask-tanya anything! Asktanya is a Python framework to search factual information on the internet.
 
-# Startup the project
+### 🏠 [Homepage](liviaellen.com/asktanya)
 
-The initial setup.
+### ✨ [Demo](liviaellen.com/asktanya)
 
-Create virtualenv and install the project:
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv ~/venv ; source ~/venv/bin/activate ;\
-    pip install pip -U; pip install -r requirements.txt
+## Install
+
+```sh
+pip install asktanya
 ```
 
-Unittest test:
-```bash
-make clean install test
+## Usage
+
+```sh
+ask-tanya
 ```
 
-Check for asktanya in gitlab.com/{group}.
-If your project is not set please add it:
+## Author
 
-- Create a new project on `gitlab.com/{group}/asktanya`
-- Then populate it:
+👤 **Livia Ellen**
 
-```bash
-##   e.g. if group is "{group}" and project_name is "asktanya"
-git remote add origin git@github.com:{group}/asktanya.git
-git push -u origin master
-git push -u origin --tags
-```
+* Website: liviaellen.com
+* Github: [@liviaellen](https://github.com/liviaellen)
+* LinkedIn: [@liviaellen](https://linkedin.com/in/liviaellen)
 
-Functionnal test with a script:
+## 🤝 Contributing
 
-```bash
-cd
-mkdir tmp
-cd tmp
-asktanya-run
-```
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/liviaellen/asktanya/issues). 
 
-# Install
+## Show your support
 
-Go to `https://github.com/{group}/asktanya` to see the project, manage issues,
-setup you ssh public key, ...
+Give a ⭐️ if this project helped you!
 
-Create a python3 virtualenv and activate it:
+<a href="https://www.patreon.com/liviaellen">
+  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+</a>
 
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv -ppython3 ~/venv ; source ~/venv/bin/activate
-```
-
-Clone the project and install it:
-
-```bash
-git clone git@github.com:{group}/asktanya.git
-cd asktanya
-pip install -r requirements.txt
-make clean install test                # install and test
-```
-Functionnal test with a script:
-
-```bash
-cd
-mkdir tmp
-cd tmp
-asktanya-run
-```
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

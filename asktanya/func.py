@@ -84,9 +84,7 @@ def try_ask(soup, question):
                                 ".FLP8od"
                             ).text  # "LEsW6e DVGBBd"><div class="wDYxhc NFQFxe oHglmf xzPb7d"
                             answer2 = soup.select_one(".NFQFxe").text
-                            #print(
-                                "TRY - Who is ___, exp: Who is the president of United States?"
-                            )
+                            #print("TRY - Who is ___, exp: Who is the president of United States?")
                             if answer2 != "":
                                 return f"{answer1} - {answer2}"
                             return answer1
