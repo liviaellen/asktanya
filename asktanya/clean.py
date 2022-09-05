@@ -1,6 +1,7 @@
 import nltk
 nltk.download('stopwords')
 nltk.download('wordnet')
+nltk.download('omw')
 from nltk import pos_tag
 from nltk.corpus import wordnet as wn
 from nltk.stem.wordnet import WordNetLemmatizer
