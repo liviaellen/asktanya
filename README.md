@@ -30,7 +30,7 @@ ask-tanya
 ```python
 import asktanya
 from asktanya.main import ask_tanya
-ask_tanya("What is the fastest bike?")
+ask_tanya("Why is the earth round")
 ```
 
 ## Author
