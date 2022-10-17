@@ -15,6 +15,7 @@
 
 ### ✨ [Demo](https://asktanya.herokuapp.com/)
 
+![alt text](https://github.com/liviaellen/asktanya/blob/master/image/image.png?raw=true)
 ## Install
 
 ```sh

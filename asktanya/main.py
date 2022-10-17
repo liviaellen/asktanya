@@ -3,8 +3,6 @@ from bs4 import BeautifulSoup
 import requests
 
 
-
-
 def ask_tanya(question):
 
     html = requests.get(f'https://www.google.com/search?q="{question}', headers=headers)
